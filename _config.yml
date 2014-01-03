@@ -2,3 +2,16 @@ name: Badger Code
 markdown: redcarpet
 pygments: true
 baseurl: /badger-code
+
+blog:
+  source: img/blog/original
+  output: generated
+  presets:
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
+    half:
+      width: 400
+      height: 400
