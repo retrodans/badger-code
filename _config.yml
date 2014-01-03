@@ -1,4 +1,4 @@
 name: Badger Code
 markdown: redcarpet
 pygments: true
-baseurl: blahblah
+baseurl: /badger-code
