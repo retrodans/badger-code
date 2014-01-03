@@ -1,0 +1,11 @@
+<nav class="nav-primary" role="navigation" >
+	<h2>Nav</h2>
+    <ul>
+        {% for p in site.pages %}
+        <li>
+        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+        	<!-- Note: the above baseurl wont work locally at the moment, but is required for github -->
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
